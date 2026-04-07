@@ -1,0 +1,101 @@
+.page {
+  padding-top: 80px;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.headerSection {
+  padding: 100px 0 60px;
+}
+
+.sectionLabel {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1a1a1a;
+  max-width: 800px;
+}
+
+.servicesSection {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 0.45fr;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.textColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.serviceItem {
+  padding: var(--spacing-xl);
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  min-height: 300px;
+}
+
+.iconWrapper {
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.serviceContent h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.serviceContent p {
+  color: #666;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+.verticalImageColumn {
+  position: relative;
+  min-height: 100%;
+}
+
+.image {
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+  .verticalImageColumn {
+    height: 600px;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .textColumns {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .serviceItem {
+    padding: var(--spacing-lg);
+    min-height: auto;
+  }
+}

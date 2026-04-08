@@ -1,13 +1,17 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link, usePathname } from '@/i18n/routing';
+import { useTranslations, useLocale } from 'next-intl';
 import Button from './Button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import styles from './Header.module.css';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations('Nav');
+  const locale = useLocale();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,40 +43,59 @@ export default function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''} ${isMenuOpen ? styles.menuOpen : ''}`}>
       <div className={`container ${styles.headerContainer}`}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
-          CASA YAPI
+          CASA YAPI GROUP
         </Link>
         
         {/* Desktop Nav */}
         <nav className={styles.nav}>
-          <Link href="/">HOME</Link>
-          <Link href="/services">SERVICES</Link>
-          <Link href="/projects">PROJECTS</Link>
-          <Link href="/about">ABOUT US</Link>
-          <Link href="/contact">CONTACT US</Link>
+          <Link href="/">{t('home')}</Link>
+          <Link href="/services">{t('services')}</Link>
+          <Link href="/projects">{t('projects')}</Link>
+          <Link href="/about">{t('about')}</Link>
+          <Link href="/contact">{t('contact')}</Link>
         </nav>
 
         <div className={styles.actions}>
+          <div className={styles.langSwitcher}>
+            <Link 
+              href={pathname} 
+              locale={locale === 'tr' ? 'en' : 'tr'}
+              className={styles.langBtn}
+            >
+              <Globe size={18} />
+              <span>{locale === 'tr' ? 'EN' : 'TR'}</span>
+            </Link>
+          </div>
           <Button href="/contact" variant={isScrolled ? 'primary' : 'white'}>
-            GET A QUOTE
+            {t('quote')}
           </Button>
         </div>
 
         {/* Mobile Toggle */}
-        <button className={styles.mobileToggle} onClick={toggleMenu} aria-label="Toggle Menu">
-          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        <div className={styles.mobileActions}>
+           <Link 
+              href={pathname} 
+              locale={locale === 'tr' ? 'en' : 'tr'}
+              className={styles.langBtnMobile}
+            >
+              <span>{locale === 'tr' ? 'EN' : 'TR'}</span>
+            </Link>
+          <button className={styles.mobileToggle} onClick={toggleMenu} aria-label="Toggle Menu">
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
 
         {/* Mobile Nav Overlay */}
         <div className={`${styles.mobileNav} ${isMenuOpen ? styles.mobileNavOpen : ''}`}>
            <nav className={styles.mobileLinks}>
-            <Link href="/" onClick={closeMenu}>HOME</Link>
-            <Link href="/services" onClick={closeMenu}>SERVICES</Link>
-            <Link href="/projects" onClick={closeMenu}>PROJECTS</Link>
-            <Link href="/about" onClick={closeMenu}>ABOUT US</Link>
-            <Link href="/contact" onClick={closeMenu}>CONTACT US</Link>
+            <Link href="/" onClick={closeMenu}>{t('home')}</Link>
+            <Link href="/services" onClick={closeMenu}>{t('services')}</Link>
+            <Link href="/projects" onClick={closeMenu}>{t('projects')}</Link>
+            <Link href="/about" onClick={closeMenu}>{t('about')}</Link>
+            <Link href="/contact" onClick={closeMenu}>{t('contact')}</Link>
             <div className={styles.mobileBtn}>
               <Button href="/contact" variant="primary" onClick={closeMenu}>
-                GET A QUOTE
+                {t('quote')}
               </Button>
             </div>
           </nav>

@@ -1,0 +1,162 @@
+{
+  "Nav": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "projects": "PROJECTS",
+    "about": "ABOUT US",
+    "contact": "CONTACT US",
+    "quote": "GET A QUOTE"
+  },
+  "Home": {
+    "heroTitle": "Correct Planning, Strong Execution, Reliable Results",
+    "aboutLabel": "ABOUT OUR COMPANY",
+    "aboutDesc": "We operate in the fields of industrial and residential projects, land-for-construction applications, and construction contracting services.",
+    "readMore": "READ MORE",
+    "servicesLabel": "OUR SERVICES",
+    "servicesTitle": "We Offer a Range of Services to Meet All Types of Needs",
+    "allServices": "ALL SERVICES",
+    "stats": {
+      "inProgress": "In-Progress Sites",
+      "completed": "Projects Completed",
+      "partners": "Business Partners"
+    },
+    "featuredLabel": "FEATURED PROJECTS",
+    "featuredTitle": "We Build Projects That Last",
+    "allProjects": "ALL PROJECTS"
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "",
+    "storyLabel": "Our Story",
+    "storyTitle": "We Build for People.",
+    "storyP1": "Casa Di Pietra Yapı Group manages all steps from project development to turnkey completion in commercial and residential construction projects with its professional teams.",
+    "storyP2": "Our commitment to excellence and high-quality workmanship has made us a leader in the sector. We are proud of our ability to manage complex projects from start to finish.",
+    "storyP3": "With 7 large-scale projects completed to date, we have established a reliable application experience on a regional scale.",
+    "storyP4": "We ensure safety, quality, and transparency by taking full responsibility in every project.",
+    "missionLabel": "Our Mission",
+    "missionTitle": "Building a Sustainable Future",
+    "missionDesc": "At CASA YAPI GROUP, we prioritize sustainable construction practices that minimize environmental impact while maximizing long-term value for our clients and communities.",
+    "testimonialsLabel": "Testimonials",
+    "testimonialsTitle": "What People Say",
+    "testimonials": [
+      {
+        "name": "Christopher Ramirez",
+        "text": "CASA YAPI GROUP transformed our vision into reality. Their attention to detail and commitment to deadlines is unparalleled in the industry.",
+        "role": "CEO, TechPark Innovations"
+      },
+      {
+        "name": "Marcus Thompson",
+        "text": "The team's professional approach to site management and quality control made our complex infrastructure project a smooth success.",
+        "role": "Director of Urban Planning"
+      },
+      {
+        "name": "Aisha Patel",
+        "text": "Reliability is hard to find, but CASA YAPI GROUP delivers it every time. They are our go-to partner for all commercial developments.",
+        "role": "Founder, GreenEdge Living"
+      }
+    ]
+  },
+  "Services": {
+    "label": "OUR SERVICES",
+    "title": "We Offer Options Tailored to Your Needs",
+    "INDUSTRIAL FACILITY PROJECTS": {
+      "title": "INDUSTRIAL FACILITY PROJECTS",
+      "desc": "Specialized engineering and construction solutions for manufacturing plants, warehouses, and complex industrial complexes."
+    },
+    "RESIDENTIAL PROJECTS": {
+      "title": "RESIDENTIAL PROJECTS",
+      "desc": "From luxury villa complexes to modern apartment buildings, we create high-quality living spaces tailored for comfort and durability."
+    },
+    "CONSTRUCTION CONTRACTING SERVICES": {
+      "title": "CONSTRUCTION CONTRACTING SERVICES",
+      "desc": "Professional project management and execution services, delivering complex projects on time and within budget through expert craftsmanship."
+    },
+    "LAND VALUATION SERVICES": {
+      "title": "LAND VALUATION SERVICES",
+      "desc": "Expert appraisal and feasibility studies to determine the highest and best use for land investments and urban development."
+    },
+    "LANDSCAPE CONSTRUCTION": {
+      "title": "LANDSCAPE CONSTRUCTION",
+      "desc": "Transforming outdoor spaces with aesthetic and functional landscaping solutions, integrating natural beauty with architectural precision."
+    },
+    "SUSTAINABLE AND ECOLOGIC": {
+      "title": "SUSTAINABLE AND ECOLOGIC",
+      "desc": "Environmentally conscious building practices and green technologies designed to minimize carbon footprint and maximize energy efficiency."
+    },
+    "PROPERTY & COMPLEX MANAGEMENT": {
+      "title": "PROPERTY & COMPLEX MANAGEMENT",
+      "desc": "Professional administrative, technical, and social management services for residential complexes and commercial properties, ensuring premium living standards."
+    },
+    "ENGINEERING SERVICES": {
+      "title": "ENGINEERING SERVICES",
+      "desc": "Advanced structural and civil engineering solutions providing technical excellence for the most challenging architectural visions."
+    }
+  },
+  "Projects": {
+    "label": "OUR PROJECTS",
+    "title": "Building Landmarks, Creating Legacies",
+    "viewProject": "VIEW PROJECT",
+    "photos": "Photos",
+    "items": {
+      "konya-artma-tesisi-betonarme-isleri": {
+        "title": "Konya Water Treatment Plant",
+        "category": "Industrial Construction",
+        "desc": "Concrete and structural works for a state-of-the-art water treatment facility implemented with advanced engineering solutions."
+      },
+      "kusadas-konut-projesi": {
+        "title": "Kuşadası Residential Project",
+        "category": "Residential",
+        "desc": "A coastal residential development in Kuşadası, merging modern architecture with seaside comfort."
+      },
+      "kusadas-otel-projesi": {
+        "title": "Kuşadası Hotel Project",
+        "category": "Tourism / Hospitality",
+        "desc": "Comprehensive hotel construction project focusing on luxury, aesthetics, and high-end guest experience."
+      },
+      "kusadas-ticari-alan-projesi-avm": {
+        "title": "Kuşadası Commercial Center (Mall)",
+        "category": "Commercial / Retail",
+        "desc": "Modern commercial and shopping mall project located in the heart of Kuşadası."
+      },
+      "kusadas-villa-projesi": {
+        "title": "Kuşadası Villa Project",
+        "category": "Luxury Villa",
+        "desc": "Tailor-made luxury villa project integrated with nature, offering exclusive living spaces."
+      }
+    }
+  },
+  "Contact": {
+    "label": "GET A QUOTE",
+    "title": "Request a Quote for Your Next Project",
+    "subtitle": "We'll get back to you shortly",
+    "form": {
+      "firstName": "First name *",
+      "lastName": "Last name *",
+      "email": "Email *",
+      "subject": "Subject",
+      "timing": "When are you looking to start?",
+      "timingOptions": {
+        "select": "Select...",
+        "asap": "ASAP",
+        "1-3": "1-3 Months",
+        "6plus": "6 Months and up"
+      },
+      "projectDesc": "What do you want to build/repair?",
+      "submit": "GET A QUOTE"
+    },
+    "infoLabel": "CONTACT US",
+    "infoTitle": "For any inquiries or questions:",
+    "addressTitle": "ADDRESS",
+    "hoursTitle": "OFFICE HOURS",
+    "emailTitle": "EMAIL",
+    "phoneTitle": "PHONE",
+    "subLabel": "WORK WITH US",
+    "subTitle": "Become a Subcontractor"
+  },
+  "Footer": {
+    "tagline": "Shaping the Future.",
+    "links": "Quick Links",
+    "follow": "Follow Us",
+    "rights": "All rights reserved."
+  }
+}

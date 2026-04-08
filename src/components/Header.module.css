@@ -60,6 +60,53 @@
 .actions {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.langSwitcher {
+  display: flex;
+  align-items: center;
+}
+
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+
+.header.scrolled .langBtn {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.langBtn:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.mobileActions {
+  display: none;
+  align-items: center;
+  gap: 15px;
+}
+
+.langBtnMobile {
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.header.scrolled .langBtnMobile {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .mobileToggle {
@@ -110,6 +157,10 @@
 @media (max-width: 1024px) {
   .nav, .actions {
     display: none;
+  }
+
+  .mobileActions {
+    display: flex;
   }
 
   .mobileToggle {

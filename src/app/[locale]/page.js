@@ -1,7 +1,8 @@
 'use client';
 import { useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import {
   Building2,
   Home as HomeIcon,
@@ -13,6 +14,10 @@ import Button from "@/components/Button";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const t = useTranslations('Home');
+  const tp = useTranslations('Projects.items');
+  const ts = useTranslations('Services');
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -29,14 +34,18 @@ export default function Home() {
   }, []);
 
   const featuredProjects = [
-    { title: "Konya Water Treatment Plant", category: "Industrial", image: "/images/projects/konya-artma-tesisi-betonarme-isleri/project-1.jpeg" },
-    { title: "Kuşadası Residential Project", category: "Residential", image: "/images/projects/kusadas-konut-projesi/project-1.jpeg" },
-    { title: "Kuşadası Hotel Project", category: "Tourism", image: "/images/projects/kusadas-otel-projesi/project-1.jpeg" }
-  ];
-
-  const clients = [
-    "OAK HILLS CITY", "BRONFMAN HOTEL", "NEST MEDICAL", "SHAWNS",
-    "Latch.", "STOCKET"
+    { 
+      title: tp('konya-artma-tesisi-betonarme-isleri.title'), 
+      image: "/images/projects/konya-artma-tesisi-betonarme-isleri/project-1.jpeg" 
+    },
+    { 
+      title: tp('kusadas-konut-projesi.title'), 
+      image: "/images/projects/kusadas-konut-projesi/project-1.jpeg" 
+    },
+    { 
+      title: tp('kusadas-otel-projesi.title'), 
+      image: "/images/projects/kusadas-otel-projesi/project-1.jpeg" 
+    }
   ];
 
   return (
@@ -45,10 +54,10 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContent} ${styles.reveal}`}>
-          <h1 className={styles.heroTitle}>Correct Planning, <br /> Strong Execution, Reliable Results</h1>
+          <h1 className={styles.heroTitle}>{t('heroTitle')}</h1>
           <div className={styles.heroActions}>
             <Button href="/contact" variant="primary">
-              GET A QUOTE <ChevronRight size={16} className={styles.btnIcon} />
+              {t('readMore')} <ChevronRight size={16} className={styles.btnIcon} />
             </Button>
           </div>
         </div>
@@ -58,13 +67,12 @@ export default function Home() {
       <section className={`section ${styles.aboutSection} ${styles.reveal}`}>
         <div className={`container ${styles.aboutGrid}`}>
           <div className={styles.aboutText}>
-            <span className={styles.sectionLabel}>ABOUT OUR COMPANY</span>
+            <span className={styles.sectionLabel}>{t('aboutLabel')}</span>
             <p className={styles.aboutDescription}>
-              We operate in the fields of industrial and residential projects,
-              land-for-construction applications, and construction contracting services.
+              {t('aboutDesc')}
             </p>
             <Button href="/about" variant="dark">
-              READ MORE <ChevronRight size={16} className={styles.btnIcon} />
+              {t('readMore')} <ChevronRight size={16} className={styles.btnIcon} />
             </Button>
           </div>
           <div className={styles.aboutImageContainer}>
@@ -83,33 +91,33 @@ export default function Home() {
         <div className="container">
           <div className={styles.servicesGridMain}>
             <div className={styles.servicesHeader}>
-              <span className={styles.sectionLabel}>OUR SERVICES</span>
-              <h2 className={styles.sectionTitle}>We Offer a Range of Services to Meet All Types of Needs</h2>
+              <span className={styles.sectionLabel}>{t('servicesLabel')}</span>
+              <h2 className={styles.sectionTitle}>{t('servicesTitle')}</h2>
               <Link href="/services" className={styles.allServicesBtn}>
-                ALL SERVICES <ChevronRight size={16} />
+                {t('allServices')} <ChevronRight size={16} />
               </Link>
             </div>
 
             <div className={styles.servicesGridItems}>
               <div className={styles.serviceBox}>
                 <Building2 className={styles.serviceIcon} size={40} strokeWidth={1.5} />
-                <h3>Industrial Facility Projects</h3>
-                <p>Describe the service and how customers or clients can benefit from it.</p>
+                <h3>{ts('INDUSTRIAL FACILITY PROJECTS.title')}</h3>
+                <p>{ts('INDUSTRIAL FACILITY PROJECTS.desc')}</p>
               </div>
               <div className={styles.serviceBox}>
                 <HomeIcon className={styles.serviceIcon} size={40} strokeWidth={1.5} />
-                <h3>Residential Projects</h3>
-                <p>Describe the service and how customers or clients can benefit from it.</p>
+                <h3>{ts('RESIDENTIAL PROJECTS.title')}</h3>
+                <p>{ts('RESIDENTIAL PROJECTS.desc')}</p>
               </div>
               <div className={styles.serviceBox}>
                 <Compass className={styles.serviceIcon} size={40} strokeWidth={1.5} />
-                <h3>Construction Contracting Services</h3>
-                <p>Describe the service and how customers or clients can benefit from it.</p>
+                <h3>{ts('CONSTRUCTION CONTRACTING SERVICES.title')}</h3>
+                <p>{ts('CONSTRUCTION CONTRACTING SERVICES.desc')}</p>
               </div>
               <div className={styles.serviceBox}>
                 <HardHat className={styles.serviceIcon} size={40} strokeWidth={1.5} />
-                <h3>Land Valuation Services</h3>
-                <p>Describe the service and how customers or clients can benefit from it.</p>
+                <h3>{ts('LAND VALUATION SERVICES.title')}</h3>
+                <p>{ts('LAND VALUATION SERVICES.desc')}</p>
               </div>
             </div>
           </div>
@@ -121,15 +129,15 @@ export default function Home() {
         <div className={`container ${styles.statsGrid}`}>
           <div className={styles.statItem}>
             <h3 className={styles.statNumber}>1</h3>
-            <p>In-Progress Sites</p>
+            <p>{t('stats.inProgress')}</p>
           </div>
           <div className={styles.statItem}>
             <h3 className={styles.statNumber}>7</h3>
-            <p>Projects Completed</p>
+            <p>{t('stats.completed')}</p>
           </div>
           <div className={styles.statItem}>
             <h3 className={styles.statNumber}>45</h3>
-            <p>Business Partners</p>
+            <p>{t('stats.partners')}</p>
           </div>
         </div>
       </section>
@@ -137,8 +145,8 @@ export default function Home() {
       {/* Featured Projects Slider Header */}
       <section className={`section ${styles.featuredHeader} ${styles.reveal}`}>
         <div className="container">
-          <span className={styles.sectionLabel}>FEATURED PROJECTS</span>
-          <h2 className={styles.sectionTitle}>We Build Projects That Last</h2>
+          <span className={styles.sectionLabel}>{t('featuredLabel')}</span>
+          <h2 className={styles.sectionTitle}>{t('featuredTitle')}</h2>
         </div>
       </section>
 
@@ -158,11 +166,10 @@ export default function Home() {
             ))}
           </div>
           <div className={styles.centerAction}>
-            <Button href="/projects" variant="dark">ALL PROJECTS</Button>
+            <Button href="/projects" variant="dark">{t('allProjects')}</Button>
           </div>
         </div>
       </section>
-
     </div>
   );
 }

@@ -1,0 +1,162 @@
+{
+  "Nav": {
+    "home": "ANASAYFA",
+    "services": "HİZMETLER",
+    "projects": "PROJELER",
+    "about": "HAKKIMIZDA",
+    "contact": "İLETİŞİM",
+    "quote": "TEKLİF ALIN"
+  },
+  "Home": {
+    "heroTitle": "Doğru Planlama, Güçlü Uygulama, Güvenilir Sonuçlar",
+    "aboutLabel": "ŞİRKETİMİZ HAKKINDA",
+    "aboutDesc": "Endüstriyel ve konut projeleri, arsa-inşaat uygulamaları ve inşaat taahhüt hizmetleri alanlarında faaliyet göstermekteyiz.",
+    "readMore": "DAHA FAZLASI",
+    "servicesLabel": "HİZMETLERİMİZ",
+    "servicesTitle": "Her Türlü İhtiyaca Cevap Veren Geniş Hizmet Yelpazesi Sunuyoruz",
+    "allServices": "TÜM HİZMETLER",
+    "stats": {
+      "inProgress": "Devam Eden Şantiyeler",
+      "completed": "Tamamlanan Projeler",
+      "partners": "İş Ortakları"
+    },
+    "featuredLabel": "ÖNE ÇIKAN PROJELER",
+    "featuredTitle": "Kalıcı Projeler İnşa Ediyoruz",
+    "allProjects": "TÜM PROJELER"
+  },
+  "About": {
+    "title": "Hakkımızda",
+    "subtitle": "",
+    "storyLabel": "Bizim Hikayemiz",
+    "storyTitle": "İnsanlar İçin İnşa Ediyoruz.",
+    "storyP1": "Casa Di Pietra Yapı Group, profesyonel ekipleriyle ticari ve konut inşaat projelerinde proje geliştirmeden anahtar teslimi tamamlanmasına kadar tüm basamakları yönetir.",
+    "storyP2": "Mükemmelliğe olan bağlılığımız ve yüksek kaliteli işçiliğimiz bizi sektörde lider yapmıştır. Karmaşık projeleri baştan sona yönetme yeteneğimizle gurur duyuyoruz.",
+    "storyP3": "Bugüne kadar tamamlanan 7 büyük ölçekli proje ile bölgesel ölçekte güvenilir bir uygulama deneyimi oluşturduk.",
+    "storyP4": "Her projede tüm sorumluluğu alarak güvenlik, kalite ve şeffaflığı sağlıyoruz.",
+    "missionLabel": "Misyonumuz",
+    "missionTitle": "Sürdürülebilir Bir Gelecek İnşa Etmek",
+    "missionDesc": "CASA YAPI GROUP'ta, çevresel etkiyi minimize ederken müşterilerimiz ve topluluklarımız için uzun vadeli değeri maksimize eden sürdürülebilir inşaat uygulamalarına öncelik veriyoruz.",
+    "testimonialsLabel": "Geri Bildirimler",
+    "testimonialsTitle": "İnsanlar Ne Diyor?",
+    "testimonials": [
+      {
+        "name": "Christopher Ramirez",
+        "text": "CASA YAPI GROUP vizyonumuzu gerçeğe dönüştürdü. Detaylara gösterdikleri özen ve terminlere bağlılıkları sektörde eşsiz.",
+        "role": "CEO, TechPark Innovations"
+      },
+      {
+        "name": "Marcus Thompson",
+        "text": "Ekibin saha yönetimi ve kalite kontrol konusundaki profesyonel yaklaşımı, karmaşık altyapı projemizi sorunsuz bir başarıya dönüştürdü.",
+        "role": "Kentsel Planlama Direktörü"
+      },
+      {
+        "name": "Aisha Patel",
+        "text": "Güvenilirlik bulmak zordur, ancak CASA YAPI GROUP her zaman bunu sağlıyor. Tüm ticari geliştirmelerimiz için vazgeçilmez ortağımızlar.",
+        "role": "Kurucu, GreenEdge Living"
+      }
+    ]
+  },
+  "Services": {
+    "label": "HİZMETLERİMİZ",
+    "title": "İhtiyaçlarınıza Uygun Seçenekler Sunuyoruz",
+    "INDUSTRIAL FACILITY PROJECTS": {
+      "title": "ENDÜSTRİYEL TESİS PROJELERİ",
+      "desc": "Üretim tesisleri, depolar ve karmaşık endüstriyel tesisler için özel mühendislik ve inşaat çözümleri."
+    },
+    "RESIDENTIAL PROJECTS": {
+      "title": "KONUT PROJELERİ",
+      "desc": "Lüks villa komplekslerinden modern apartman binalarına kadar, konfor ve dayanıklılık için tasarlanmış yüksek kaliteli yaşam alanları yaratıyoruz."
+    },
+    "CONSTRUCTION CONTRACTING SERVICES": {
+      "title": "İNŞAAT TAAHHÜT HİZMETLERİ",
+      "desc": "Karmaşık projeleri uzman işçilikle zamanında ve bütçe dahilinde teslim eden profesyonel proje yönetimi ve uygulama hizmetleri."
+    },
+    "LAND VALUATION SERVICES": {
+      "title": "ARSA DEĞERLEME HİZMETLERİ",
+      "desc": "Arazi yatırımları ve kentsel gelişim için en iyi kullanım şeklini belirlemek üzere uzman ekspertiz ve fizibilite çalışmaları."
+    },
+    "LANDSCAPE CONSTRUCTION": {
+      "title": "PEYZAJ UYGULAMALARI",
+      "desc": "Doğal güzelliği mimari hassasiyetle bütünleştirerek, estetik ve fonksiyonel peyzaj çözümleri ile dış mekanları dönüştürüyoruz."
+    },
+    "SUSTAINABLE AND ECOLOGIC": {
+      "title": "SÜRDÜRÜLEBİLİR VE EKOLOJİK",
+      "desc": "Karbon ayak izini minimize etmek ve enerji verimliliğini maksimize etmek için tasarlanmış çevre dostu bina uygulamaları ve yeşil teknolojiler."
+    },
+    "PROPERTY & COMPLEX MANAGEMENT": {
+      "title": "MÜLK VE SİTE YÖNETİMİ",
+      "desc": "Konut siteleri ve ticari mülkler için premium yaşam standartları sağlayan profesyonel idari, teknik ve sosyal yönetim hizmetleri."
+    },
+    "ENGINEERING SERVICES": {
+      "title": "MÜHENDİSLİK HİZMETLERİ",
+      "desc": "En zorlu mimari vizyonlar için teknik mükemmellik sağlayan ileri yapısal ve sivil mühendislik çözümleri."
+    }
+  },
+  "Projects": {
+    "label": "PROJELERİMİZ",
+    "title": "Simge Yapılar İnşa Ediyoruz",
+    "viewProject": "PROJEYİ İNCELE",
+    "photos": "Fotoğraf",
+    "items": {
+      "konya-artma-tesisi-betonarme-isleri": {
+        "title": "Konya Arıtma Tesisi",
+        "category": "Endüstriyel Yapı",
+        "desc": "İleri mühendislik çözümleriyle uygulanan son teknoloji su arıtma tesisi için betonarme ve yapısal işler."
+      },
+      "kusadas-konut-projesi": {
+        "title": "Kuşadası Konut Projesi",
+        "category": "Konut",
+        "desc": "Modern mimariyi deniz kenarı konforuyla birleştiren Kuşadası'nda bir kıyı konut geliştirmesi."
+      },
+      "kusadas-otel-projesi": {
+        "title": "Kuşadası Otel Projesi",
+        "category": "Turizm / Otel",
+        "desc": "Lüks, estetik ve üst düzey misafir deneyimine odaklanan kapsamlı otel inşaat projesi."
+      },
+      "kusadas-ticari-alan-projesi-avm": {
+        "title": "Kuşadası Ticari Alan (AVM)",
+        "category": "Ticari / Perakende",
+        "desc": "Kuşadası'nın kalbinde yer alan modern ticari ve alışveriş merkezi projesi."
+      },
+      "kusadas-villa-projesi": {
+        "title": "Kuşadası Villa Projesi",
+        "category": "Lüks Villa",
+        "desc": "Doğa ile bütünleşmiş, özel yaşam alanları sunan kişiye özel lüks villa projesi."
+      }
+    }
+  },
+  "Contact": {
+    "label": "TEKLİF ALIN",
+    "title": "Sonraki Projeniz İçin Teklif İsteyin",
+    "subtitle": "Kısa süre içinde size geri döneceğiz",
+    "form": {
+      "firstName": "Ad *",
+      "lastName": "Soyad *",
+      "email": "E-posta *",
+      "subject": "Konu",
+      "timing": "Ne zaman başlamak istersiniz?",
+      "timingOptions": {
+        "select": "Seçiniz...",
+        "asap": "Hemen",
+        "1-3": "1-3 Ay",
+        "6plus": "6 Ay ve üzeri"
+      },
+      "projectDesc": "Ne inşa etmek/ummak istersiniz?",
+      "submit": "TEKLİF ALIN"
+    },
+    "infoLabel": "BİZE ULAŞIN",
+    "infoTitle": "Her türlü soru veya görüşleriniz için:",
+    "addressTitle": "ADRES",
+    "hoursTitle": "OFİS SAATLERİ",
+    "emailTitle": "E-POSTA",
+    "phoneTitle": "TELEFON",
+    "subLabel": "BİZİMLE ÇALIŞIN",
+    "subTitle": "Alt Yüklenici Olun"
+  },
+  "Footer": {
+    "tagline": "Geleceği Şekillendirmek.",
+    "links": "Hızlı Linkler",
+    "follow": "Bizi Takip Edin",
+    "rights": "Tüm hakları saklıdır."
+  }
+}

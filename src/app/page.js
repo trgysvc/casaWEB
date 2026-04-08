@@ -29,9 +29,9 @@ export default function Home() {
   }, []);
 
   const featuredProjects = [
-    { title: "ST. PETER'S HUB", category: "Commercial", image: "/images/hero.png" },
-    { title: "SILVER CREST DAM", category: "Infrastructure", image: "/images/about.png" },
-    { title: "NORTH CAMPUS HQ", category: "Commercial", image: "/images/hero.png" }
+    { title: "Konya Water Treatment Plant", category: "Industrial", image: "/images/projects/konya-artma-tesisi-betonarme-isleri/project-1.jpeg" },
+    { title: "Kuşadası Residential Project", category: "Residential", image: "/images/projects/kusadas-konut-projesi/project-1.jpeg" },
+    { title: "Kuşadası Hotel Project", category: "Tourism", image: "/images/projects/kusadas-otel-projesi/project-1.jpeg" }
   ];
 
   const clients = [
@@ -46,7 +46,6 @@ export default function Home() {
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContent} ${styles.reveal}`}>
           <h1 className={styles.heroTitle}>Correct Planning, <br /> Strong Execution, Reliable Results</h1>
-          <p className={styles.heroSubtitle}>Experienced & Reliable Builders, since 1968</p>
           <div className={styles.heroActions}>
             <Button href="/contact" variant="primary">
               GET A QUOTE <ChevronRight size={16} className={styles.btnIcon} />
@@ -121,7 +120,7 @@ export default function Home() {
       <section className={`${styles.statsSection} ${styles.reveal}`}>
         <div className={`container ${styles.statsGrid}`}>
           <div className={styles.statItem}>
-            <h3 className={styles.statNumber}>7</h3>
+            <h3 className={styles.statNumber}>1</h3>
             <p>In-Progress Sites</p>
           </div>
           <div className={styles.statItem}>
@@ -164,52 +163,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Project Spotlight - Overlapping Box Style */}
-      <section className={`${styles.spotlightSection} ${styles.reveal}`}>
-        <div className={styles.spotlightBg}>
-          <video autoPlay muted loop playsInline className={styles.spotlightVideo}>
-            <source src="https://video.wixstatic.com/video/11062b_86561f95a4f74d90956b67119ff92d11/1080p/mp4/file.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <div className={`container ${styles.spotlightContainer}`}>
-          <div className={styles.spotlightBox}>
-            <span className={styles.darkLabel}>CONSTRUCTION STORIES</span>
-            <h2 className={styles.spotlightTitle}>Project Spotlight</h2>
-
-            <div className={styles.spotlightSpecs}>
-              <div className={styles.specItem}>
-                <span className={styles.specLabel}>Year Completed</span>
-                <span className={styles.specValue}>2035</span>
-              </div>
-              <div className={styles.specItem}>
-                <span className={styles.specLabel}>Client</span>
-                <span className={styles.specValue}>Spark Services Developers</span>
-              </div>
-              <div className={styles.specItem}>
-                <span className={styles.specLabel}>Market</span>
-                <span className={styles.specValue}>Commercial</span>
-              </div>
-            </div>
-
-            <Button href="/projects" variant="primary">VIEW PROJECT</Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
-      <section className={`section ${styles.clientsSection} ${styles.reveal}`}>
-        <div className="container">
-          <span className={styles.sectionLabel}>OUR CLIENTS</span>
-          <div className={styles.clientsGrid}>
-            {clients.map((client) => (
-              <div key={client} className={styles.clientItem}>
-                <span>{client}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

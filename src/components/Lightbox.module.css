@@ -101,6 +101,19 @@
     display: none;
   }
   .imageWrapper {
-    height: 60vh;
+    height: 50vh;
+  }
+  .closeBtn {
+    top: 20px;
+    right: 20px;
+  }
+  .info h3 {
+    font-size: 1.25rem;
+  }
+  .imageContainer {
+    gap: 15px;
+  }
+  .counter {
+    bottom: 20px;
   }
 }

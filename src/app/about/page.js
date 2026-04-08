@@ -35,27 +35,19 @@ export default function About() {
         <div className={styles.introGrid}>
           <div className={styles.introText}>
             <span className="section-label">Our Story</span>
-            <h2>We Build For People.</h2>
+            <h2>We Build for People.</h2>
             <p>
-              CASA YAPI specializes in residential, commercial, and bridge construction. 
-              Our commitment to excellence and high-quality workmanship has made us a leader in the industry.
-              We take pride in our ability to manage complex projects from inception to completion.
+              Casa Yapı Group manages all steps from project development to turnkey completion in commercial and residential construction projects with its professional teams.
             </p>
-            
-            <div className={styles.valuesGrid}>
-              <div className={styles.valueItem}>
-                <h3>Services</h3>
-                <p>Comprehensive construction solutions tailored to meet the unique needs of every client.</p>
-              </div>
-              <div className={styles.valueItem}>
-                <h3>Experience</h3>
-                <p>Over 15 years of industry-leading experience in building landmarks and legacies.</p>
-              </div>
-              <div className={styles.valueItem}>
-                <h3>Accountability</h3>
-                <p>We take full responsibility for every project, ensuring safety, quality, and transparency.</p>
-              </div>
-            </div>
+            <p>
+              Our commitment to excellence and high-quality workmanship has made us a leader in the sector. We are proud of our ability to manage complex projects from start to finish.
+            </p>
+            <p>
+              With 7 large-scale projects completed to date, we have established a reliable application experience on a regional scale.
+            </p>
+            <p>
+              We ensure safety, quality, and transparency by taking full responsibility in every project.
+            </p>
           </div>
           <div className={styles.introImage}>
             <Image 

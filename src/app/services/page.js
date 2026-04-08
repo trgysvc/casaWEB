@@ -3,12 +3,13 @@ import Image from 'next/image';
 import { 
   Building2, 
   Home as HomeIcon, 
-  Ruler, 
   HardHat, 
-  Hammer, 
-  Settings, 
+  Map, 
   TreePine, 
-  Sun 
+  Leaf, 
+  ClipboardList, 
+  Settings2,
+  Factory
 } from "lucide-react";
 
 export const metadata = {
@@ -18,44 +19,44 @@ export const metadata = {
 export default function Services() {
   const services = [
     {
-      title: "Commercial",
-      icon: <Building2 size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
+      title: "INDUSTRIAL FACILITY PROJECTS",
+      icon: <Factory size={32} strokeWidth={1.5} />,
+      description: "Specialized engineering and construction solutions for manufacturing plants, warehouses, and complex industrial complexes."
     },
     {
-      title: "Residential",
+      title: "RESIDENTIAL PROJECTS",
       icon: <HomeIcon size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
+      description: "From luxury villa complexes to modern apartment buildings, we create high-quality living spaces tailored for comfort and durability."
     },
     {
-      title: "Pre-Construction",
-      icon: <Ruler size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
-    },
-    {
-      title: "Site Management",
+      title: "CONSTRUCTION CONTRACTING SERVICES",
       icon: <HardHat size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
+      description: "Professional project management and execution services, delivering complex projects on time and within budget through expert craftsmanship."
     },
     {
-      title: "Special Projects",
-      icon: <Hammer size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
+      title: "LAND VALUATION SERVICES",
+      icon: <Map size={32} strokeWidth={1.5} />,
+      description: "Expert appraisal and feasibility studies to determine the highest and best use for land investments and urban development."
     },
     {
-      title: "Civil Engineering",
-      icon: <Settings size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
-    },
-    {
-      title: "Landscape Construction",
+      title: "LANDSCAPE CONSTRUCTION",
       icon: <TreePine size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
+      description: "Transforming outdoor spaces with aesthetic and functional landscaping solutions, integrating natural beauty with architectural precision."
     },
     {
-      title: "Sustainable and Ecologic",
-      icon: <Sun size={32} strokeWidth={1.5} />,
-      description: "Describe the service and how customers or clients can benefit from it. It’s an opportunity to add a short description with relevant details."
+      title: "SUSTAINABLE AND ECOLOGIC",
+      icon: <Leaf size={32} strokeWidth={1.5} />,
+      description: "Environmentally conscious building practices and green technologies designed to minimize carbon footprint and maximize energy efficiency."
+    },
+    {
+      title: "PROPERTY & COMPLEX MANAGEMENT",
+      icon: <ClipboardList size={32} strokeWidth={1.5} />,
+      description: "Professional administrative, technical, and social management services for residential complexes and commercial properties, ensuring premium living standards."
+    },
+    {
+      title: "ENGINEERING SERVICES",
+      icon: <Settings2 size={32} strokeWidth={1.5} />,
+      description: "Advanced structural and civil engineering solutions providing technical excellence for the most challenging architectural visions."
     }
   ];
 

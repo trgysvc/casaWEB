@@ -13,91 +13,86 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "North Campus HQ",
-      category: "Commercial",
-      description: "A landmark corporate headquarters featuring sustainable architecture.",
-      image: "/images/hero.png"
+      title: "Konya Water Treatment Plant",
+      category: "Industrial Construction",
+      description: "Concrete and structural works for a state-of-the-art water treatment facility implemented with advanced engineering solutions.",
+      slug: "konya-artma-tesisi-betonarme-isleri",
+      imageCount: 8,
+      images: Array.from({ length: 8 }, (_, i) => `/images/projects/konya-artma-tesisi-betonarme-isleri/project-${i + 1}.jpeg`)
     },
     {
       id: 2,
-      title: "Peak Logistics Center",
-      category: "Industrial",
-      description: "State-of-the-art logistics and distribution facility.",
-      image: "/images/about.png"
+      title: "Kuşadası Residential Project",
+      category: "Residential",
+      description: "A coastal residential development in Kuşadası, merging modern architecture with seaside comfort.",
+      slug: "kusadas-konut-projesi",
+      imageCount: 8,
+      images: Array.from({ length: 8 }, (_, i) => `/images/projects/kusadas-konut-projesi/project-${i + 1}.jpeg`)
     },
     {
       id: 3,
-      title: "Sunset Bridge",
-      category: "Infrastructure",
-      description: "Architectural bridge design connecting urban districts.",
-      image: "/images/hero.png"
+      title: "Kuşadası Hotel Project",
+      category: "Tourism / Hospitality",
+      description: "Comprehensive hotel construction project focusing on luxury, aesthetics, and high-end guest experience.",
+      slug: "kusadas-otel-projesi",
+      imageCount: 7,
+      images: Array.from({ length: 7 }, (_, i) => `/images/projects/kusadas-otel-projesi/project-${i + 1}.jpeg`)
     },
     {
       id: 4,
-      title: "Celestial Heights",
-      category: "Residential",
-      description: "Luxury residential complex redefining high-rise living.",
-      image: "/images/about.png"
+      title: "Kuşadası Commercial Center (Mall)",
+      category: "Commercial / Retail",
+      description: "Modern commercial and shopping mall project located in the heart of Kuşadası.",
+      slug: "kusadas-ticari-alan-projesi-avm",
+      imageCount: 8,
+      images: Array.from({ length: 8 }, (_, i) => `/images/projects/kusadas-ticari-alan-projesi-avm/project-${i + 1}.jpeg`)
     },
     {
       id: 5,
-      title: "Angela Residence",
-      category: "Residential",
-      description: "A custom-built family home focused on modern elegance.",
-      image: "/images/hero.png"
-    },
-    {
-      id: 6,
-      title: "System Inq. HQ",
-      category: "Commercial",
-      description: "A tech-focused office development designed for innovation.",
-      image: "/images/about.png"
-    },
-    {
-      id: 7,
-      title: "Brookline Water Line",
-      category: "Civil Engineering",
-      description: "Essential water infrastructure project for local communities.",
-      image: "/images/hero.png"
-    },
-    {
-      id: 8,
-      title: "Meadowbrook Railway Station",
-      category: "Infrastructure",
-      description: "Modern railway transit hub integrating regional traffic.",
-      image: "/images/about.png"
-    },
-    {
-      id: 9,
-      title: "Silver Crest Dam",
-      category: "Civil Engineering",
-      description: "Large-scale dam project for water management.",
-      image: "/images/hero.png"
+      title: "Kuşadası Villa Project",
+      category: "Luxury Villa",
+      description: "Tailor-made luxury villa project integrated with nature, offering exclusive living spaces.",
+      slug: "kusadas-villa-projesi",
+      imageCount: 5,
+      images: Array.from({ length: 5 }, (_, i) => `/images/projects/kusadas-villa-projesi/project-${i + 1}.jpeg`)
     }
   ];
 
-  const openLightbox = (index) => {
-    setLightbox({ isOpen: true, index });
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openLightbox = (projectIndex) => {
+    setSelectedProject(projects[projectIndex]);
+    setCurrentImageIndex(0);
   };
 
   const closeLightbox = () => {
-    setLightbox({ ...lightbox, isOpen: false });
+    setSelectedProject(null);
   };
 
   const nextImage = () => {
-    setLightbox({ ...lightbox, index: (lightbox.index + 1) % projects.length });
+    setCurrentImageIndex((prev) => (prev + 1) % selectedProject.images.length);
   };
 
   const prevImage = () => {
-    setLightbox({ ...lightbox, index: (lightbox.index - 1 + projects.length) % projects.length });
+    setCurrentImageIndex((prev) => (prev - 1 + selectedProject.images.length) % selectedProject.images.length);
   };
+
+  // Lightbox component expect images as array of objects with certain keys
+  // Let's adapt our single project images for the Lightbox component
+  const lightboxImages = selectedProject ? selectedProject.images.map(img => ({
+    image: img,
+    title: selectedProject.title,
+    category: selectedProject.category,
+    description: selectedProject.description
+  })) : [];
 
   return (
     <div className={styles.page}>
       <section className={styles.headerSection}>
         <div className="container">
-          <h1 className={styles.title}>Projects</h1>
-          <p className={styles.subtitle}>Building Landmarks, Creating Legacies.</p>
+          <h1 className={styles.title}>Our Projects</h1>
+          <p className={styles.subtitle}>Landmark Structures, Sustainable Future.</p>
         </div>
       </section>
 
@@ -107,9 +102,11 @@ export default function Projects() {
             <div key={project.id} className={styles.projectCard}>
               <div className={styles.projectImageWrapper} onClick={() => openLightbox(idx)}>
                 <Image 
-                  src={project.image} 
+                  src={project.images[0]} 
                   alt={project.title} 
                   fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={idx < 3} // Mark first row as priority for faster LCP
                   className={styles.projectImage}
                 />
                 <div className={styles.projectOverlay}>
@@ -120,6 +117,7 @@ export default function Projects() {
                 <span className={styles.category}>{project.category}</span>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
+                <span className={styles.photoCount}>{project.imageCount} Photos</span>
               </div>
             </div>
           ))}
@@ -127,10 +125,10 @@ export default function Projects() {
       </section>
 
       <Lightbox 
-        isOpen={lightbox.isOpen}
+        isOpen={!!selectedProject}
         onClose={closeLightbox}
-        images={projects}
-        currentIndex={lightbox.index}
+        images={lightboxImages}
+        currentIndex={currentImageIndex}
         onNext={nextImage}
         onPrev={prevImage}
       />

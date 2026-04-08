@@ -34,6 +34,8 @@ export default function Lightbox({ isOpen, onClose, images, currentIndex, onNext
               src={currentProject.image || "/images/hero.png"} 
               alt={currentProject.title}
               fill
+              sizes="(max-width: 1200px) 100vw, 80vw"
+              priority // Lightbox images should load fast
               className={styles.image}
             />
           </div>

@@ -22,20 +22,20 @@ export default function Projects() {
     {
       id: 2,
       slug: "kusadas-konut-projesi",
-      imageCount: 8,
-      images: Array.from({ length: 8 }, (_, i) => `/images/projects/kusadas-konut-projesi/project-${i + 1}.jpeg`)
+      imageCount: 12,
+      images: Array.from({ length: 12 }, (_, i) => `/images/projects/kusadas-konut-projesi/project-${i + 1}.jpeg`)
     },
     {
       id: 3,
       slug: "kusadas-otel-projesi",
-      imageCount: 7,
-      images: Array.from({ length: 7 }, (_, i) => `/images/projects/kusadas-otel-projesi/project-${i + 1}.jpeg`)
+      imageCount: 11,
+      images: Array.from({ length: 11 }, (_, i) => `/images/projects/kusadas-otel-projesi/project-${i + 1}.jpeg`)
     },
     {
       id: 4,
       slug: "kusadas-ticari-alan-projesi-avm",
-      imageCount: 8,
-      images: Array.from({ length: 8 }, (_, i) => `/images/projects/kusadas-ticari-alan-projesi-avm/project-${i + 1}.jpeg`)
+      imageCount: 10,
+      images: Array.from({ length: 10 }, (_, i) => `/images/projects/kusadas-ticari-alan-projesi-avm/project-${i + 1}.jpeg`)
     },
     {
       id: 5,

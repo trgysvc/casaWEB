@@ -39,10 +39,10 @@
     "testimonialsLabel": "Testimonials",
     "testimonialsTitle": "What People Say",
     "testimonials": [
-      {
-        "name": "Christopher Ramirez",
+       {
+        "name": "Kamuran Doğan Yıldız",
         "text": "CASA YAPI GROUP transformed our vision into reality. Their attention to detail and commitment to deadlines is unparalleled in the industry.",
-        "role": "CEO, TechPark Innovations"
+        "role": "Planning Coordinator"
       },
       {
         "name": "Marcus Thompson",
@@ -50,9 +50,9 @@
         "role": "Director of Urban Planning"
       },
       {
-        "name": "Aisha Patel",
+        "name": "Halil İbrahim Yılmaz",
         "text": "Reliability is hard to find, but CASA YAPI GROUP delivers it every time. They are our go-to partner for all commercial developments.",
-        "role": "Founder, GreenEdge Living"
+        "role": "Architect"
       }
     ]
   },

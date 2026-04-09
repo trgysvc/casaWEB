@@ -40,19 +40,19 @@
     "testimonialsTitle": "İnsanlar Ne Diyor?",
     "testimonials": [
       {
-        "name": "Christopher Ramirez",
+        "name": "Kamuran Doğan Yıldız",
         "text": "CASA YAPI GROUP vizyonumuzu gerçeğe dönüştürdü. Detaylara gösterdikleri özen ve terminlere bağlılıkları sektörde eşsiz.",
-        "role": "CEO, TechPark Innovations"
+        "role": "Planlama Koordinatörü"
       },
       {
-        "name": "Marcus Thompson",
+        "name": "Cafer Gençtürk",
         "text": "Ekibin saha yönetimi ve kalite kontrol konusundaki profesyonel yaklaşımı, karmaşık altyapı projemizi sorunsuz bir başarıya dönüştürdü.",
-        "role": "Kentsel Planlama Direktörü"
+        "role": "KOSKİ"
       },
       {
-        "name": "Aisha Patel",
+        "name": "Halil İbrahim Yılmaz",
         "text": "Güvenilirlik bulmak zordur, ancak CASA YAPI GROUP her zaman bunu sağlıyor. Tüm ticari geliştirmelerimiz için vazgeçilmez ortağımızlar.",
-        "role": "Kurucu, GreenEdge Living"
+        "role": "Mimar"
       }
     ]
   },

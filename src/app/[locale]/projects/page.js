@@ -16,8 +16,8 @@ export default function Projects() {
     {
       id: 1,
       slug: "konya-artma-tesisi-betonarme-isleri",
-      imageCount: 8,
-      images: Array.from({ length: 8 }, (_, i) => `/images/projects/konya-artma-tesisi-betonarme-isleri/project-${i + 1}.jpeg`)
+      imageCount: 9,
+      images: Array.from({ length: 9 }, (_, i) => `/images/projects/konya-artma-tesisi-betonarme-isleri/project-${i + 1}.jpeg`)
     },
     {
       id: 2,
